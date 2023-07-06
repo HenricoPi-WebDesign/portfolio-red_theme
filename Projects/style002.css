@@ -1,0 +1,165 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background: #000;
+    color: #fff;
+    
+}
+
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(black, rgba(0,0,0,0.01), black), url(image/main003.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.container{
+    padding: 10px 10%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo{
+    width: 140px;
+}
+
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #B42223;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact-left{
+    flex-basis: 50%;
+    padding-top: 180px;
+    padding-bottom: 60px;
+}
+
+.contact-right{
+    flex-basis: 50%;
+    padding-top: 180px;
+    padding-bottom: 60px;
+}
+
+.contact-left h1{
+    font-size: 50px;
+}
+
+.contact-left p{
+    margin-top: 30px;
+    color: #fff;
+    font-size: 30px;
+}
+
+.contact-left p i{
+    color: #B42223;
+    margin-right: 15px;
+    font-size: 20px;
+}
+
+.contact-left p a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.social-icons{
+     margin-top: 30px;
+}
+
+.social-icons a{
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 35px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.social-icons a:hover{
+    color: #B42223;
+    transform: translateY(-5px);
+}
+
+.btn.btn2{
+    color: #B42223;
+    display: inline-block;
+    background: #000;
+}
+
+.btn.btn2:hover{
+    background: #B42223;
+    color: #fff;
+}
+
+
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.5s;
+    font-size: 20px;
+    background-color: #B42223;
+}
+
+.btn:hover{
+    color: #B42223;
+    background-color: #fff;
+} 
